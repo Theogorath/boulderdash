@@ -21,6 +21,8 @@ public abstract class Main {
      *            the arguments
      */
     public static void main(final String[] args) {
+    	
+    	//test commit Geoffrey
         final ControllerFacade controller = new ControllerFacade(new ViewFacade(), new ModelFacade());
 
         try {
