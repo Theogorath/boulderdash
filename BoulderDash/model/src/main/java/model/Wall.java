@@ -1,5 +1,5 @@
 package model;
 
-public class Wall {
+public class Wall extends Static {
 
 }

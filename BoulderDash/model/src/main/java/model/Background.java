@@ -1,5 +1,5 @@
 package model;
 
-public class Background {
+public class Background extends Static {
 
 }
