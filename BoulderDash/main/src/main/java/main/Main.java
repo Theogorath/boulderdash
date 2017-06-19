@@ -22,7 +22,7 @@ public abstract class Main {
      */
     public static void main(final String[] args) {
     	
-    	//test commit Geoffrey
+    	//test commit Hugo
         final ControllerFacade controller = new ControllerFacade(new ViewFacade(), new ModelFacade());
 
         try {
