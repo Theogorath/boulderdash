@@ -2,15 +2,25 @@ package model;
 
 public class Dirt extends Static {
 	
-	char dirtPosition;
 	boolean dirtIsVisible;
+	int xDirt;
+	int yDirt;
+	//add dirt sprite
 	
 
 	//when player position = dirt position, dirt remove
 	public void dirtRemove(){
 		
-		if (playerPosition = dirtPosition){ //TO DO: recover playerPosition
-			dirtIsVisible = false;
+		if (xPlayer = xDirt){ //TO DO: recover playerPosition\
+			
+			if (yPlayer = yDirt){
+				dirtIsVisible = false;
+			}
+			
+			else {
+				dirtIsVisible = true;
+			}
+			
 		}
 		
 		else{
