@@ -25,7 +25,4 @@ public class Player extends Character implements IController {
 				playerPosition.setLocation(p.x, p.y+1);
 				break;}}
 
-
-
-
 }
