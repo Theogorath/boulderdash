@@ -1,5 +1,5 @@
 package model;
 
-public class Diamond extends Mobile{
+public class Diamond extends GravityElement{
 
 }

@@ -1,5 +1,5 @@
 package model;
 
-public class Rock extends Mobile{
+public class Rock extends GravityElement{
 
 }
