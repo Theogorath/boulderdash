@@ -11,7 +11,6 @@ import javax.swing.*;
 
 public class showSprite extends JFrame{
 	
-	
 	public int posX;
 	public int posY;
 	public int choice;

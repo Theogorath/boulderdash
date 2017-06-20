@@ -5,7 +5,6 @@ import java.awt.Point;
 import controller.IController;
 
 import java.awt.event.KeyEvent;
-
 public class Player extends Character implements IController {
 	Point playerPosition;
 
