@@ -33,6 +33,6 @@ public class ShowSpriteTest {
 	public void testPaintGraphics() {
 		
 		//impossible to do because we would need to make a bufferedImage and it would always be working
-		
+		System.out.print("this test is unecessary because we have to create the right buffered image so the test wouldn't return any errors. The unit test would be unseless");
 	}
 }
