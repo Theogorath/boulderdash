@@ -1,6 +1,7 @@
 package model;
 //
 public class GravityElement extends Mobile{
+
 //
 //
 //	public void gravity(){

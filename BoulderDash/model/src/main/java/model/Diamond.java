@@ -1,6 +1,7 @@
 package model;
 //
 public class Diamond extends GravityElement{
+
 //
 //	int xDiamond;
 //	int yDiamond;
@@ -30,4 +31,5 @@ public class Diamond extends GravityElement{
 //
 //	}
 //
+
 }

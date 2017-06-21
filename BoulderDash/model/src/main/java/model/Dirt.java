@@ -1,6 +1,7 @@
 package model;
 //
 public class Dirt extends Static {
+ 
 //	
 //	boolean dirtIsVisible;
 //	int xDirt;
@@ -31,4 +32,5 @@ public class Dirt extends Static {
 //	
 //	//TO DO: add the dirt sprite
 //	
+
 }
