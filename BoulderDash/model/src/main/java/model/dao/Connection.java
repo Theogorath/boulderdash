@@ -1,4 +1,4 @@
-package model.dao;
+/*package model.dao;
 
 import java.sql.DriverManager;
 
@@ -25,4 +25,4 @@ public class Connection {
 		
 	}
 	
-}
+}*/
