@@ -11,9 +11,9 @@ public class Dirt extends Static {
 	//when player position = dirt position, dirt remove
 	public void dirtRemove(){
 		
-		if (xPlayer = xDirt){ //TO DO: recover playerPosition\
+		if (xPlayer == xDirt){ //TO DO: recover playerPosition\
 			
-			if (yPlayer = yDirt){
+			if (yPlayer == yDirt){
 				dirtIsVisible = false;
 			}
 			

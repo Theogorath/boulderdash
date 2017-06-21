@@ -10,9 +10,9 @@ public class Diamond extends GravityElement{
 
 	public void getDiamond(){
 
-		if (xPlayer=xDiamond){
+		if (xPlayer==xDiamond){
 
-			if (yPlayer=yDiamond){
+			if (yPlayer==yDiamond){
 				diamondIsVisible = false;
 
 				//call Theo for the diamond count
