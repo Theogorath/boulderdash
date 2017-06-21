@@ -13,11 +13,18 @@ public class ShowSprite extends JFrame implements IshowSprite{
 	
 	/**
 	 * 
+	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	public int posX;
 	public int posY;
 	public int choice;
+	
+	/**
+     * 
+     *
+     *
+     */
 	
 	public ShowSprite(int choice, int posX, int posY){
 	
@@ -31,6 +38,7 @@ public class ShowSprite extends JFrame implements IshowSprite{
 		this.choice = choice;
 		System.out.println("choice : " + choice);
 	}
+	
 	
 	public void paint(Graphics g){
 		
