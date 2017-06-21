@@ -7,9 +7,9 @@ public class GravityElement extends Mobile{
 //	public void gravity(){
 //		//When dirtIsVisible = false under Gravity element
 //
-//		if (xDirt = xGravityElement){
+//		if (xDirt == xGravityElement){
 //
-//			if (yDirt = yGravityElement-1){
+//			if (yDirt == yGravityElement-1){
 //				yGravityElement = yGravityElement-1;
 //			}
 //

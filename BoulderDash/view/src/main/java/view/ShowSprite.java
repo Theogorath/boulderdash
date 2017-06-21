@@ -9,13 +9,17 @@ import java.awt.Graphics;
 import javax.swing.*;
 
 
-public class showSprite extends JFrame{
+public class ShowSprite extends JFrame implements IshowSprite{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public int posX;
 	public int posY;
 	public int choice;
 	
-	public showSprite(int choice, int posX, int posY){
+	public ShowSprite(int choice, int posX, int posY){
 	
 		this.setTitle("test");
 		this.setSize(640,480);
@@ -78,4 +82,5 @@ public class showSprite extends JFrame{
 		}
 	}
 	//new showSprite(1,16,0); 
+
 }
