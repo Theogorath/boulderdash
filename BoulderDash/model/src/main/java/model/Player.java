@@ -14,6 +14,10 @@ import java.awt.event.KeyEvent;
  * @version 1.0
  */
 public class Player extends Character implements IController {
+	public Player(int id, Point position) {
+		super(id, position);
+		// TODO Auto-generated constructor stub
+	}
 	Point playerPosition;
 	/**
 	 * Move the player in the map
