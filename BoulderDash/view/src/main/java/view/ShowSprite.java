@@ -8,22 +8,28 @@ import java.awt.Graphics;
 
 import javax.swing.*;
 
-
+/**
+ * <h1>The Class ShowSprite</h1>
+ *
+ * @author Hugo, Théo, Eva and Geoffrey
+ * @version 1.0
+ */
 public class ShowSprite extends JFrame implements IshowSprite{
-	
-	/**
-	 * 
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	public int posX;
 	public int posY;
 	public int choice;
 	
 	/**
+     * Show a sprite
      * 
-     *
-     *
+     * @param choice
+     *            Choose the sprite to use (1 -> Blocks / 2 -> Player)
+     * @param posX
+     * 			  Select the position X in the sprite
+     * @param posY
+     *			  Select the position Y in the sprite          
      */
 	
 	public ShowSprite(int choice, int posX, int posY){

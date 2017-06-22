@@ -1,5 +1,10 @@
 package model;
-//
+/**
+ * <h1>The Class GravityElement, mother class of Diamond and Rocks</h1>
+ *
+ * @author Hugo, Théo, Eva and Geoffrey
+ * @version 1.0
+ */
 public class GravityElement extends Mobile{
 
 //
