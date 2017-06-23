@@ -31,9 +31,8 @@ public class ViewFacadeTest {
 	@Test
 	public void testDisplayMessage() {
 		
-		final String message = "this is a test";
-		JOptionPane.showMessageDialog(null, message);
+		final String message = "this is a test";		//sets a message in a String
+		JOptionPane.showMessageDialog(null, message);	//displays the message on the panel
 		
 	}
-
 }

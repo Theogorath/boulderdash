@@ -3,9 +3,21 @@ package view;
 import java.awt.*;
 import javax.swing.*;
 
+/**
+ * <h1>The Frame Class</h1>
+ *
+ * @author Hugo, Théo, Eva and Geoffrey
+ * @version 1.0
+ */
+
+
 public class Frame extends JFrame {
 	private Panel panel;
 	
+
+/**
+ * Creates a new frame with a static size and a panel that has the size of the frame
+ */
 	public Frame(){
 		this.setTitle("Window");
 		this.setSize(640,480);
