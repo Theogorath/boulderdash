@@ -17,14 +17,14 @@ public class Player extends Character implements IController {
 	public Player(int id, Point position) {
 		super(id, position);
 	}
-	
+
 	/**
 	 * Move the player in the map
 	 * 
 	 * @param e
 	 *            This event occurs when a key press is followed by a key release       
 	 */
-	
+
 	public void Movement(KeyEvent e) throws InterruptedException {
 		Point p = getPosition().getLocation();
 		switch (e.getKeyCode()){
@@ -36,7 +36,15 @@ public class Player extends Character implements IController {
 				Thread.sleep(100);
 				new ShowSprite(2,16,16, p);
 			}
+			if(mapLevel.getValue(p.x+2, p.y).getId() == 4 && mapLevel.getValue(p.x+1, p.y).getId() == 8){
+				Point m = p;
+				m.x = m.x+2;
+				new ShowSprite(1,32,128,m);
+				Thread.sleep(100);
+				new ShowSprite(1,32,128,p);
+				Thread.interrupted();
 
+			}
 			break;
 		case KeyEvent.VK_LEFT:
 			if(mapLevel.getValue(p.x-1, p.y).getId() != 2){

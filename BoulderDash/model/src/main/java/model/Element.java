@@ -19,7 +19,7 @@ public class Element {
 		
 	}
 	
-	public synchronized BufferedImage getImage() {
+	public BufferedImage getImage() {
 		return image;
 	}
 

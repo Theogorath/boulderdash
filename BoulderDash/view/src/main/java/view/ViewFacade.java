@@ -14,6 +14,9 @@ public class ViewFacade implements IView {
     /**
      * Instantiates a new view facade.
      */
+	
+	Frame frame;
+	
     public ViewFacade() {
         super();
     }
@@ -30,7 +33,7 @@ public class ViewFacade implements IView {
     }
     
     public void startFrame(IModel model){
-    	
+    	this.frame = new Frame(model);
     }
     
 }

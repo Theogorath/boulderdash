@@ -31,7 +31,9 @@ public class ShowSprite extends JFrame implements IshowSprite{
      * @param posX
      * 			  Select the position X in the sprite
      * @param posY
-     *			  Select the position Y in the sprite          
+     *			  Select the position Y in the sprite   
+     * @param position
+     * 			  Select a Point where the sprite will be show       
      */
 	
 	public ShowSprite(int choice, int posX, int posY, Point position){
@@ -47,6 +49,7 @@ public class ShowSprite extends JFrame implements IshowSprite{
      *            Graphic object to paint on a component
      */
 	
+	@SuppressWarnings("null")
 	public void paint(Graphics g){
 		
 		BufferedImage img = null;

@@ -32,19 +32,19 @@ public class Map {
 		this.mapLevel = table;
 	}
 
-	public synchronized Element[][] getTable() {
+	public  Element[][] getTable() {
 		return mapLevel;
 	}
 
-	public synchronized static int getLine() {
+	public static int getLine() {
 		return line;
 	}
 
-	public synchronized static int getColomn() {
+	public static int getColomn() {
 		return colomn;
 	}
 	
-	public synchronized Element getValue(int a, int b){
+	public Element getValue(int a, int b){
 		return mapLevel[a][b];
 	}
 }

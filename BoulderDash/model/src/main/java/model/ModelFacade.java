@@ -11,8 +11,16 @@ public class ModelFacade implements IModel {
     /**
      * Instantiates a new model facade.
      */
-    public ModelFacade() {
+	Map map;
+    public Map getMap() {
+		return map;
+	}
+	public void setMap(Map map) {
+		this.map = map;
+	}
+	public ModelFacade() {
         super();
+        map = new Map();
     }
 
 

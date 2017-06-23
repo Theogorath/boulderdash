@@ -62,4 +62,10 @@ public class ControllerFacade implements IController {
     public IModel getModel() {
         return this.model;
     }
+
+	@Override
+	public void ControllerFacadeConstructor(IView view, IModel model) {
+		// TODO Auto-generated method stub
+		
+	}
 }
