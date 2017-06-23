@@ -1,6 +1,7 @@
 package model;
 
 import java.awt.Point;
+
 import model.dao.Connection;
 
 public class Map {
