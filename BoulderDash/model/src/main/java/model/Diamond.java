@@ -1,4 +1,7 @@
 package model;
+
+import java.awt.Point;
+
 /**
  * <h1>The Class Diamond</h1>
  *
@@ -6,6 +9,11 @@ package model;
  * @version 1.0
  */
 public class Diamond extends GravityElement{
+
+	public Diamond(int id, Point position) {
+		super(id, position);
+		// TODO Auto-generated constructor stub
+	}
 
 	//
 	//	int xDiamond;

@@ -1,6 +1,14 @@
 package model;
+
+import java.awt.Point;
+
 //
 public class Wall extends Static {
+
+	public Wall(int id, Point position) {
+		super(id, position);
+		// TODO Auto-generated constructor stub
+	}
 //	
 //	int xWall;
 //	int yWall;

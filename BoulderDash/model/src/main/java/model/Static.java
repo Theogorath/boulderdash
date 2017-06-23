@@ -7,7 +7,8 @@ import java.awt.Point;
  *
  * @author Hugo, Théo, Eva and Geoffrey
  * @version 1.0
- */public class Static extends Element{
+ */
+public class Static extends Element{
 
 	public Static(int id, Point position) {
 		super(id, position);

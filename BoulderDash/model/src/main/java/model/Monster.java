@@ -8,20 +8,8 @@ import java.awt.Point;
  * @version 1.0
  */
 public class Monster extends Character{
-	Point monsterPosition;
-	public Monster (int type){
-		Point m = monsterPosition.getLocation();
-		switch(type){
-		case 1 :
-			// Put the animations
-			break;
-		case 2 :
-			// Put the animations
-			break;
-		}
-		
-		
-		
-		
+	public Monster(int id, Point position) {
+		super(id, position);
+		// TODO Auto-generated constructor stub
 	}
 }
