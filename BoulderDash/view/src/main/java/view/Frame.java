@@ -20,9 +20,4 @@ public class Frame extends JFrame {
 		panel.setBounds(0, 0, 640, 480);
 	}
 	
-
-	public static void main(final String[] args) {
-		Frame frame = new Frame();
-	}
-	
 }
