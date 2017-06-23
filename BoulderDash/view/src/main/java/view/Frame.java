@@ -17,12 +17,7 @@ public class Frame extends JFrame {
 		panel = new Panel();
 		this.setContentPane(panel);
 		panel.setLayout(null);
-		panel.setVisible(true);
-		JLabel label;
-		label = new JLabel("text");
-		panel.add(label);
-		label.setBounds(10, 20, 30, 40);
-		label.setVisible(true);
+		panel.setBounds(0, 0, 640, 480);
 	}
 	
 
