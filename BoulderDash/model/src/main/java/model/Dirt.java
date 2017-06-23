@@ -10,10 +10,11 @@ import java.awt.Point;
  */
 public class Dirt extends Static {
 
-	public Dirt(int id, Point position) {
-		super(id, position);
+	public Dirt(int id, int posX, int posY) {
+		super(id, posX, posY);
 		// TODO Auto-generated constructor stub
 	}
+
 
 	//	
 	//	boolean dirtIsVisible;

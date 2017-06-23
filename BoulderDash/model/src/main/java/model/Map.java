@@ -20,7 +20,6 @@ public class Map {
 			}	
 		}
 	}
-	
 	public void setTable(Element[][] table) {
 		this.mapLevel = table;
 	}

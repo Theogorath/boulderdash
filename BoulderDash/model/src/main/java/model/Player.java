@@ -1,12 +1,10 @@
 package model;
 
 import java.awt.Point;
-import view.IshowSprite;
-import view.ShowSprite;
+import java.awt.event.KeyEvent;
 
 import controller.IController;
-
-import java.awt.event.KeyEvent;
+import view.ShowSprite;
 /**
  * <h1>The Class Player</h1>
  *
@@ -14,8 +12,9 @@ import java.awt.event.KeyEvent;
  * @version 1.0
  */
 public class Player extends Character implements IController {
-	public Player(int id, Point position) {
-		super(id, position);
+
+	public Player(int id, int posX, int posY) {
+		super(id, posX, posY);
 		// TODO Auto-generated constructor stub
 	}
 	Point playerPosition;
@@ -25,11 +24,12 @@ public class Player extends Character implements IController {
 	 * @param e
 	 *            This event occurs when a key press is followed by a key release       
 	 */
+	Map mapLevel = new Map();
 	public void Movement(KeyEvent e) {
 		Point p = playerPosition.getLocation();
 		switch (e.getKeyCode()){
 		case KeyEvent.VK_RIGHT:
-			if(mapLevel[p.x+1][p.y] != 2){
+			if(mapLevel.getValue(Integer.parseInt(p.x+1), p.y) != 2){
 				playerPosition.setLocation(p.x+1, p.y);
 				new ShowSprite(2,48,64); 
 				Thread.sleep(100);

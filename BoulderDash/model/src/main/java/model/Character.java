@@ -10,9 +10,10 @@ import java.awt.Point;
  */
 public class Character extends Mobile {
 
-	public Character(int id, Point position) {
-		super(id, position);
+	public Character(int id, int posX, int posY) {
+		super(id, posX, posY);
 		// TODO Auto-generated constructor stub
 	}
+
 
 }

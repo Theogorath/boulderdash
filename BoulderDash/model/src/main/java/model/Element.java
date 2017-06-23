@@ -10,12 +10,14 @@ import java.awt.image.BufferedImage;
  */
 public class Element {
 	private int id;
-	private Point position;
+	private int posX;
+	private int posY;
 	private BufferedImage image;
 	
-	public Element(int id, Point position){
+	public Element(int id, int posX, int posY){
 		this.id = id;
-		this.position = position;
+		this.posX = posX;
+		this.posY = posY;
 		
 	}
 	
@@ -27,12 +29,17 @@ public class Element {
 		this.image = image;
 	}
 
-	public synchronized Point getPosition() {
-		return position;
+	public synchronized int getPositionX() {
+		return posX;
 	}
 	
-	public synchronized void setPosition(Point position) {
-		this.position = position;
+	public synchronized int getPositionY() {
+		return posY;
+	}
+	
+	public synchronized void setPosition(int posX, int posY) {
+		this.posX = posX;
+		this.posY = posY;
 	}
 	
 	public synchronized int getId() {

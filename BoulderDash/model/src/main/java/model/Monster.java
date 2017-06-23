@@ -8,8 +8,9 @@ import java.awt.Point;
  * @version 1.0
  */
 public class Monster extends Character{
-	public Monster(int id, Point position) {
-		super(id, position);
+	public Monster(int id, int posX, int posY) {
+		super(id, posX, posY);
 		// TODO Auto-generated constructor stub
 	}
+
 }
