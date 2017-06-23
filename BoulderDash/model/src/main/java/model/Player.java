@@ -31,34 +31,34 @@ public class Player extends Character implements IController {
 		case KeyEvent.VK_RIGHT:
 			if(mapLevel.getValue(p.x+1, p.y).getId() != 2){
 				playerPosition.setLocation(p.x+1, p.y);
-				new ShowSprite(2,48,64); 
+				new ShowSprite(2,48,64, p); 
 				Thread.sleep(100);
-				new ShowSprite(2,16,16);
+				new ShowSprite(2,16,16, p);
 			}
 
 			break;
 		case KeyEvent.VK_LEFT:
 			if(mapLevel.getValue(p.x-1, p.y).getId() != 2){
 				playerPosition.setLocation(p.x-1, p.y);
-				new ShowSprite(2,48,32); 
+				new ShowSprite(2,48,32, p); 
 				Thread.sleep(100);
-				new ShowSprite(2,16,16);
+				new ShowSprite(2,16,16, p);
 			}
 			break;
 		case KeyEvent.VK_UP:
 			if(mapLevel.getValue(p.x, p.y+1).getId() != 2 && mapLevel.getValue(p.x, p.y+1).getId() != 3){
 				playerPosition.setLocation(p.x, p.y+1);
-				new ShowSprite(2,32,48); 
+				new ShowSprite(2,32,48, p); 
 				Thread.sleep(100);
-				new ShowSprite(2,16,16);
+				new ShowSprite(2,16,16, p);
 			}
 			break;
 		case KeyEvent.VK_DOWN:
 			if(mapLevel.getValue(p.x, p.y-1).getId() != 2 && mapLevel.getValue(p.x, p.y-1).getId() != 3){
 				playerPosition.setLocation(p.x, p.y-1);
-				new ShowSprite(2,32,80); 
+				new ShowSprite(2,32,80, p); 
 				Thread.sleep(100);
-				new ShowSprite(2,16,16);
+				new ShowSprite(2,16,16, p);
 			}
 			break;
 		}
