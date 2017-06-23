@@ -17,12 +17,14 @@ public class Player extends Character implements IController {
 	public Player(int id, Point position) {
 		super(id, position);
 	}
+	
 	/**
 	 * Move the player in the map
 	 * 
 	 * @param e
 	 *            This event occurs when a key press is followed by a key release       
 	 */
+	
 	public void Movement(KeyEvent e) throws InterruptedException {
 		Point p = getPosition().getLocation();
 		switch (e.getKeyCode()){
@@ -64,9 +66,5 @@ public class Player extends Character implements IController {
 			}
 			break;
 		}
-
 	}
-
-
-
 }

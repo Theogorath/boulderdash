@@ -11,13 +11,15 @@ import view.ShowSprite;
  */
 public class Monster extends Character{
 	Map mapLevel = new Map();
-	
+
 	public Monster(int id, Point position) {
 		super(id, position);
 	}
+
 	/**
 	 * Move the monster with a specific IA depending of his id            
 	 */
+
 	public void MovementIA() throws InterruptedException{
 		Point p = getPosition().getLocation();
 		if (getId() == 6){
@@ -75,6 +77,5 @@ public class Monster extends Character{
 			}
 		}
 	}
-
 }
 
