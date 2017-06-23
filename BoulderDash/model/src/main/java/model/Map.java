@@ -17,8 +17,9 @@ public class Map {
 		this.mapLevel = new Element[line][colomn];
 		for(int i = 0; i < line; i++){
 			for(int j = 0; j < colomn; j++){
+				Point position = new Point(i, j);
 				//wait for the return of the DAO to id
-				mapLevel[i][j] = new Element(id, i, j);
+				mapLevel[i][j] = new Element(id, position);
 			}	
 		}
 	}

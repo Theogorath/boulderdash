@@ -10,8 +10,8 @@ import java.awt.Point;
  */
 public class GravityElement extends Mobile{
 
-	public GravityElement(int id, int posX, int posY) {
-		super(id, posX, posY);
+	public GravityElement(int id, Point position) {
+		super(id, position);
 		// TODO Auto-generated constructor stub
 	}
 

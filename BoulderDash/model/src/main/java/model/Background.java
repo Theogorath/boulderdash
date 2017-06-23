@@ -9,8 +9,8 @@ import java.awt.Point;
  * @version 1.0
  */public class Background extends Static {
 
-	public Background(int id, int posX, int posY) {
-		super(id, posX, posY);
+	public Background(int id, Point position) {
+		super(id, position);
 		// TODO Auto-generated constructor stub
 	}
 

@@ -10,8 +10,8 @@ import java.awt.Point;
  */
 public class Rock extends GravityElement{
 
-	public Rock(int id, int posX, int posY) {
-		super(id, posX, posY);
+	public Rock(int id, Point position) {
+		super(id, position);
 		// TODO Auto-generated constructor stub
 	}
 }
