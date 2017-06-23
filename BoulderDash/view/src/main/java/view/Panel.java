@@ -1,9 +1,10 @@
 package view;
 
-import java.awt.*;
+import java.util.Map;
 import java.util.Observable;
 import java.util.Observer;
-import javax.swing.*;
+
+import javax.swing.JPanel;
 
 /**
  * <h1>The Panel Class</h1>
@@ -14,12 +15,17 @@ import javax.swing.*;
 
 public class Panel extends JPanel implements Observer {
 	
+	
 	public Panel(){
 		
+	}
+	
+	public void initiateMap(){
 		
 		
 	}
-
+	
+	
 	/**
 	 *A method to update the observable
 	 *

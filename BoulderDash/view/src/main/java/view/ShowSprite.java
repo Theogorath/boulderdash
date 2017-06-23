@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import java.awt.Graphics;
+import java.awt.Point;
 
 import javax.swing.*;
 
@@ -20,6 +21,7 @@ public class ShowSprite extends JFrame implements IshowSprite{
 	public int posX;
 	public int posY;
 	public int choice;
+	public Point position;
 	
 	/**
      * Show a sprite
@@ -32,17 +34,11 @@ public class ShowSprite extends JFrame implements IshowSprite{
      *			  Select the position Y in the sprite          
      */
 	
-	public ShowSprite(int choice, int posX, int posY){
-	
-		this.setTitle("test");
-		this.setSize(640,480);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setVisible(true);
-		this.setResizable(false);
+	public ShowSprite(int choice, int posX, int posY, Point position){
 		this.posX = posX;
 		this.posY = posY;
 		this.choice = choice;
-		System.out.println("choice : " + choice);
+		this.position = position;
 	}
 	/**
      * Show a sprite
@@ -87,7 +83,7 @@ public class ShowSprite extends JFrame implements IshowSprite{
 			BufferedImage subimage = img.getSubimage(posX, posY, 16, 16);
 			System.out.println("okay subimage  width: " + subimage.getWidth());
 			System.out.println("okay subimage  height: " + subimage.getHeight());
-			g.drawImage(subimage, 50, 50, null);
+			g.drawImage(subimage, position.x, position.y, null);
 		}
 		
 		
@@ -96,10 +92,8 @@ public class ShowSprite extends JFrame implements IshowSprite{
 			BufferedImage subimage2 = img2.getSubimage(posX, posY, 16, 16);
 			System.out.println("okay subimage2  width: " + subimage2.getWidth());
 			System.out.println("okay subimage2  height: " + subimage2.getHeight());
-			g.drawImage(subimage2, 100, 100, null);
+			g.drawImage(subimage2, position.x, position.y, null);
 			
 		}
 	}
-	//new showSprite(1,16,0); 
-
 }

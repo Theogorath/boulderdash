@@ -5,24 +5,28 @@ import model.dao.Connection;
 
 public class Map {
 	private Element[][] mapLevel;
-	private Connection connection;
 	static private int line = 22;
 	static private int colomn = 40;
+	static private int levelId = 1;
 	
 	public Map(){
 		this.fillMapLevel();
 	}
 	
 	public void fillMapLevel(){
+		Connection connect = new Connection();
 		this.mapLevel = new Element[line][colomn];
+		int[][] table = new int[line][colomn];
+		connect.getMapByLevelId(levelId, table);
 		for(int i = 0; i < line; i++){
 			for(int j = 0; j < colomn; j++){
 				Point position = new Point(i, j);
-				//wait for the return of the DAO to id
+				int id = table[i][j];
 				mapLevel[i][j] = new Element(id, position);
 			}	
 		}
 	}
+	
 	public void setTable(Element[][] table) {
 		this.mapLevel = table;
 	}
