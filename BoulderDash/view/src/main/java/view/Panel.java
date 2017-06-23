@@ -15,7 +15,7 @@ import javax.swing.*;
 public class Panel extends JPanel implements Observer {
 	
 	public Panel(){
-
+		
 		
 		
 	}

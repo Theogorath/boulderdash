@@ -1,8 +1,11 @@
 package model;
+
 import java.awt.Point;
+import model.dao.Connection;
 
 public class Map {
 	private Element[][] mapLevel;
+	private Connection connection;
 	static private int line = 22;
 	static private int colomn = 40;
 	
@@ -14,9 +17,8 @@ public class Map {
 		this.mapLevel = new Element[line][colomn];
 		for(int i = 0; i < line; i++){
 			for(int j = 0; j < colomn; j++){
-				Point position = new Point(i, j);
 				//wait for the return of the DAO to id
-				mapLevel[i][j] = new Element(id, position);
+				mapLevel[i][j] = new Element(id, i, j);
 			}	
 		}
 	}
