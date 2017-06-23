@@ -44,7 +44,12 @@ public class ShowSprite extends JFrame implements IshowSprite{
 		this.choice = choice;
 		System.out.println("choice : " + choice);
 	}
-	
+	/**
+     * Show a sprite
+     * 
+     * @param g
+     *            Graphic object to paint on a component
+     */
 	
 	public void paint(Graphics g){
 		
